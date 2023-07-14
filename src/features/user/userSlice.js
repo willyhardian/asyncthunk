@@ -10,7 +10,7 @@ export const fetchUsers = createAsyncThunk(
     'users/fetch',
     async () => {
         try {
-            const response = await axios.get('https://jsonplaceholder.tyicode.com/users')
+            const response = await axios.get('https://jsonplaceholder.typicode.com/users')
             return response.data
         } catch (err) {
             throw new Error(err)
